@@ -82,28 +82,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(510,230)" to="(600,230)"/>
     <wire from="(620,160)" to="(620,200)"/>
+    <wire from="(450,230)" to="(480,230)"/>
     <wire from="(590,320)" to="(610,320)"/>
     <wire from="(570,210)" to="(600,210)"/>
     <wire from="(590,300)" to="(620,300)"/>
-    <wire from="(360,130)" to="(570,130)"/>
-    <wire from="(360,230)" to="(480,230)"/>
-    <wire from="(360,130)" to="(360,140)"/>
-    <wire from="(640,320)" to="(710,320)"/>
+    <wire from="(640,320)" to="(670,320)"/>
+    <wire from="(640,220)" to="(700,220)"/>
     <wire from="(620,240)" to="(620,300)"/>
     <wire from="(570,130)" to="(570,210)"/>
-    <wire from="(640,220)" to="(720,220)"/>
+    <wire from="(470,130)" to="(570,130)"/>
     <wire from="(590,300)" to="(590,320)"/>
-    <comp lib="0" loc="(360,230)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(710,320)" name="Pin">
+    <comp lib="0" loc="(700,220)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="Borrow"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Diff"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(640,320)" name="NOT Gate"/>
     <comp lib="0" loc="(620,160)" name="Constant">
       <a name="facing" val="south"/>
     </comp>
@@ -113,19 +108,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="1" loc="(510,230)" name="NOT Gate">
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(720,220)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Diff"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(360,130)" name="Pin">
+    <comp lib="0" loc="(470,130)" name="Pin">
       <a name="width" val="4"/>
       <a name="label" val="A"/>
     </comp>
     <comp lib="3" loc="(640,220)" name="Adder">
       <a name="width" val="4"/>
+    </comp>
+    <comp lib="1" loc="(640,320)" name="NOT Gate"/>
+    <comp lib="0" loc="(670,320)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Borrow"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(450,230)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="label" val="B"/>
     </comp>
   </circuit>
 </project>
